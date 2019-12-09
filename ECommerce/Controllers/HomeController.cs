@@ -8,7 +8,7 @@ namespace ECommerce.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Homehey
+        //Emre
         public ActionResult Index()
         {
             return View();
