@@ -24,3 +24,16 @@ main > .container {
 code {
     font-size: 80%;
 }
+
+#write-review
+{
+
+    margin-left:-35px;
+}
+#product-price
+{
+    font-size:28px;
+    color:red;
+
+
+}

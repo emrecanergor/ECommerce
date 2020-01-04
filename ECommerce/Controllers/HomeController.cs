@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ECommerce.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,20 +9,13 @@ namespace ECommerce.Controllers
 {
     public class HomeController : Controller
     {
+
+        DataContext context = new DataContext();
         // GET: Homehey
         public ActionResult Index()
         {
-            return View();
-        }
 
-        public ActionResult ProductList()
-        {
-            return View();
-        }
-
-        public ActionResult ProductDetail()
-        {
-            return View();
+            return View(context.Products.Where(i=>i.IsHome&&i.IsApproved).ToList());
         }
     }
 }
