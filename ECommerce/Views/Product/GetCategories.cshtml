@@ -1,50 +1,25 @@
 ﻿@model IEnumerable<ECommerce.Entity.Category>
 
 @{
-    var selectedCategory = Url.RequestContext.RouteData.Values["id"];
+    var selectedCategory = Url.RequestContext.RouteData.Values["id"]?.ToString() ?? "0";
 }
 
-    <ul class="list-group">
-        <li class="list-group-item">
-            <a href="@Url.Action("List","Product")">
-                All Categories
-            </a>
-        </li>
-        @foreach (var item in Model)
-        {
-            if (selectedCategory != null)
-            {
-                if (item.Id == int.Parse(selectedCategory.ToString()))
-                {
-                        <a href="@Url.Action("List", "Product", new { id = item.Id })" class="list-group-item active">
-                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                            @item.Name
-                        </a>
+<ul class="list-group">
+    <li class="list-group-item">
+        <a href="@Url.Action("List","Product")">
+            All Categories
+        </a>
+    </li>
 
-                }
-                else
-                {
-                        <a href="@Url.Action("List", "Product", new { id = item.Id })" class="list-group-item">
-                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                            @item.Name
-                        </a>
+    @foreach (var item in Model)
+    {
+        string result = int.Parse(selectedCategory) == item.Id ? "list-group-item active": "list-group-item";
 
-                }
+        <a href="@Url.Action("List", "Product", new { id = item.Id })"
+           class="@result">
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            @item.Name
+        </a>
+    }
 
-
-            }
-            else
-            {
-             
-                    <a href="@Url.Action("List", "Product", new { id = item.Id })" class="list-group-item">
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        @item.Name
-                    </a>
-                
-
-
-            }
-        }
-
-
-    </ul>
+</ul>
