@@ -1,0 +1,36 @@
+﻿@using ECommerce.Models
+@model IEnumerable<ProductModel>
+
+<div class="row">
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="imgcontainer">
+                        <img src="~/Upload/@item.Image" class="card-img-top" alt="@item.Name">
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="@Url.Action("Detail","Product", new { id=item.Id})">@item.Name</a>
+                        </h4>
+                        <p class="card-text description">@item.Description</p>
+                    </div>
+
+                    <div class="card-footer">
+                        <small class="text-muted product-price">
+                            <i class="fa fa-try" aria-hidden="true"></i>
+                            @item.Price
+                        </small>
+                        <a href="@Url.Action("Detail","Product", new { id=item.Id})" class="btn btn-success btn-sm float-right">
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            Ürünü İncele
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

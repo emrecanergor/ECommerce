@@ -1,7 +1,7 @@
 ﻿.jumbotron {
     background-image: url("img/bg.jpg");
     background-size: cover;
-    height:100%;
+    height: 100%;
 }
 
 /* Custom page CSS
@@ -25,15 +25,35 @@ code {
     font-size: 80%;
 }
 
-#write-review
-{
-
-    margin-left:-35px;
+.description {
+    font-size: 12px;
+    height:40px;
 }
-#product-price
-{
-    font-size:28px;
-    color:red;
+
+#write-review {
+    margin-left: -35px;
+}
+
+#product-price {
+    font-size: 28px;
+    color: red;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #484848;
+    line-height: 1.35em;
+    height: 34px;
+}
+
+.imgcontainer img{
+    height:262.98px;
+}
 
 
+.product-price {
+    color: #414141;
+    font-weight: 700;
+    font-size: 17px;
 }

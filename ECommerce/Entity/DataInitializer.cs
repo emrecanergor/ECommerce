@@ -28,19 +28,17 @@ namespace ECommerce.Entity
 
             List<Product> urunler = new List<Product>(){
 
-                new Product(){Name="Canon Eos 1200D 18-55 mm Profesyonel Fotoğraf Makinesi",Description="Harika Bir Ürün Kullanması Çok Keyiflidir",Stock=500,IsApproved=true,CategoryId=1,Price=2500,IsHome=true,},
-                new Product(){Name="Canon Eos 25g 18-55 mm Profesyonel Fotoğraf Makinesi",Description="Harika  Çok Keyiflidir",Stock=452,IsApproved=false,CategoryId=1,Price=846,IsHome=true,},
-                new Product(){Name="Canon Abc Profesyonel Fotoğraf Makinesi",Description="Harika Bir Ürün Kullanması Keyiflidir",Stock=644,IsApproved=true,CategoryId=1,Price=86461,IsHome=false,},
-                new Product(){Name="Canon Def Profesyonel Fotoğraf Makinesi",Description="Bir Ürün Kullanması Çok Keyiflidir",Stock=418,IsApproved=true,CategoryId=1,Price=4841,IsHome=true,},
-                new Product(){Name="Canon GĞd Profesyonel Fotoğraf Makinesi",Description="Harika Bir  Çok Keyiflidir",Stock=156,IsApproved=true,CategoryId=1,Price=4555,IsHome=true,},
-                new Product(){Name="Canon Fkm Profesyonel Fotoğraf Makinesi",Description="Harika  Kullanması Çok Keyiflidir",Stock=156,IsApproved=true,CategoryId=1,Price=515,IsHome=false,},
-
-
-                new Product(){Name="Lenovo 25LD",Description="Muazzam Bir Pc Sende Al",Stock=45,IsApproved=true,CategoryId=2,Price=6814,IsHome=true,},
-                new Product(){Name="Mac",Description="Muaz Pc Sende Al",Stock=564,IsApproved=true,CategoryId=2,Price=654654654,IsHome=true,},
-                new Product(){Name="Hp",Description="Muazzam Pc  Al",Stock=6546,IsApproved=true,CategoryId=2,Price=654,IsHome=true,},
-                new Product(){Name="Asus",Description="Muazzam Bir Sende Al",Stock=65465,IsApproved=true,CategoryId=2,Price=6,IsHome=false,},
-                new Product(){Name="Casper",Description="Muazzam Pc Sende Al",Stock=4456456,IsApproved=true,CategoryId=2,Price=848,IsHome=true,}
+                new Product(){Name="Canon Eos 1200D 18-55 mm Profesyonel Fotoğraf Makinesi",Description="Harika Bir Ürün Kullanması Çok Keyiflidir",Stock=500,IsApproved=true,CategoryId=1,Price=2500,IsHome=true,Image="1.jpg"},
+                new Product(){Name="Canon Eos 25g 18-55 mm Profesyonel Fotoğraf Makinesi",Description="Harika  Çok Keyiflidir",Stock=452,IsApproved=false,CategoryId=1,Price=846,IsHome=true,Image="2.jpg"},
+                new Product(){Name="Canon Abc Profesyonel Fotoğraf Makinesi",Description="Harika Bir Ürün Kullanması Keyiflidir",Stock=644,IsApproved=true,CategoryId=1,Price=86461,IsHome=false,Image="3.jpg"},
+                new Product(){Name="Canon Def Profesyonel Fotoğraf Makinesi",Description="Bir Ürün Kullanması Çok Keyiflidir",Stock=418,IsApproved=true,CategoryId=1,Price=4841,IsHome=true,Image="1.jpg"},
+                new Product(){Name="Canon GĞd Profesyonel Fotoğraf Makinesi",Description="Harika Bir  Çok Keyiflidir",Stock=156,IsApproved=true,CategoryId=1,Price=4555,IsHome=true,Image="3.jpg"},
+                new Product(){Name="Canon Fkm Profesyonel Fotoğraf Makinesi",Description="Harika  Kullanması Çok Keyiflidir",Stock=156,IsApproved=true,CategoryId=1,Price=515,IsHome=false,Image="2.jpg"},
+                new Product(){Name="Lenovo 25LD",Description="Muazzam Bir Pc Sende Al",Stock=45,IsApproved=true,CategoryId=2,Price=6814,IsHome=true,Image="1.jpg"},
+                new Product(){Name="Mac",Description="Muaz Pc Sende Al",Stock=564,IsApproved=true,CategoryId=2,Price=654654654,IsHome=true,Image="3.jpg"},
+                new Product(){Name="Hp",Description="",Stock=6546,IsApproved=true,CategoryId=2,Price=654,IsHome=true,Image="3.jpg"},
+                new Product(){Name="Asus",Description="Muazzam Bir Sende Al",Stock=65465,IsApproved=true,CategoryId=2,Price=6,IsHome=false,Image="1.jpg"},
+                new Product(){Name="Casper",Description="Muazzam Pc Sende Al",Stock=4456456,IsApproved=true,CategoryId=2,Price=848,IsHome=true,Image="2.jpg"}
             };
 
             foreach (var urun in urunler)
